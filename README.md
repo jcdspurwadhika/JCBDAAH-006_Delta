@@ -5,7 +5,6 @@ Proyek analisis data untuk mengevaluasi efektivitas kampanye telemarketing produ
 
 Analisis mencakup pembersihan data, eksplorasi karakteristik nasabah, evaluasi riwayat kontak dan kondisi ekonomi, serta penyusunan rekomendasi strategi pemasaran berbasis data.
 
-> **Catatan konteks:** Dataset membahas kampanye pemasaran sebuah bank di Portugal. Identitas bank tidak dikonfirmasi dalam dokumentasi proyek ini, sehingga tidak diasumsikan sebagai Banco de Portugal, bank sentral Portugal.
 
 ---
 
@@ -55,10 +54,9 @@ Kampanye telemarketing menjadi sarana untuk menawarkan produk tersebut. Namun, t
 Dataset awal terdiri dari **41.188 baris dan 21 kolom**, termasuk variabel target.
 
 **Variabel target:** `y`
-- `yes`: nasabah berlangganan deposito berjangka.
-- `no`: nasabah tidak berlangganan deposito berjangka.
+- `yes`: nasabah setuju untuk membuka deposito berjangka.
+- `no`: nasabah tidak membuka deposito berjangka.
 
-> Jumlah baris merepresentasikan observasi dalam dataset, bukan jumlah nasabah unik yang telah diverifikasi.
 
 ### Data Dictionary
 
@@ -96,9 +94,9 @@ File utama proyek:
 └── Delta_Team_Final_Project_Bank_Marketing_Analysis.ipynb
 ```
 
-Jika dataset disimpan terpisah, pastikan lokasinya sesuai dengan path pembacaan data di notebook.
 
 ## 🔍 Metodologi
+Digunakan analisis deskriptif
 
 ### 1. Data Cleaning
 
@@ -118,16 +116,14 @@ Kolom `default` memiliki proporsi `unknown` tertinggi, sekitar **20,87%**.
 | `campaign_range` | Kelompok jumlah kontak: 1, 2, 3, 4–5, 6–10, dan 11+ |
 | `year` | Estimasi tahun berdasarkan kronologi data dan indikator Euribor |
 
-> Fitur `year` merupakan hasil inferensi, bukan tanggal asli yang tersedia secara eksplisit pada dataset.
 
 ### 3. Exploratory Data Analysis
 
 Analisis dilakukan terhadap:
 
 - Profil demografi dan kondisi kredit nasabah.
-- Saluran komunikasi.
-- Riwayat dan hasil kampanye sebelumnya.
 - Frekuensi kontak selama kampanye berjalan.
+- Riwayat dan hasil kampanye sebelumnya.
 - Hubungan indikator ekonomi dengan tingkat konversi.
 
 **Conversion rate** dihitung sebagai jumlah observasi dengan `y = yes` dibagi total observasi pada kelompok yang dianalisis, kemudian dikalikan 100%.
@@ -170,7 +166,6 @@ Segmen dengan tingkat konversi tinggi belum tentu menghasilkan jumlah konversi t
 - Pada periode Euribor sekitar **0,6%–1,4%**, tingkat konversi bulanan tertentu dapat melebihi **50%**.
 - Pada periode Euribor sekitar **5%**, tingkat konversi berada pada kisaran **3%–6%**.
 
-Temuan ini menunjukkan hubungan historis, bukan bukti bahwa perubahan Euribor secara langsung menyebabkan perubahan konversi.
 
 ## 🚀 Rekomendasi Strategi
 
@@ -215,11 +210,6 @@ Simulasi dilakukan terhadap observasi yang belum berhasil dikonversi pada period
 | Asumsi conversion rate | 34%–44,5% |
 | Estimasi konversi tambahan | 6.049–7.917 |
 
-Seleksi kandidat menggunakan kategori pendidikan **university degree, high school, dan professional course**, serta mengecualikan pekerjaan **blue-collar, housemaid, dan unemployed**.
-
-**Interpretasi:** Hasil ini merupakan proyeksi skenario, bukan prediksi yang telah tervalidasi. Pemindahan conversion rate dari periode lain belum tentu mencerminkan hasil kampanye baru.
-
-Kriteria seleksi juga perlu ditinjau kembali agar tidak menyamakan kategori pekerjaan tertentu dengan kondisi keuangan yang buruk tanpa bukti tambahan.
 
 ## 🛠️ Cara Menjalankan
 
@@ -245,25 +235,11 @@ Kriteria seleksi juga perlu ditinjau kembali agar tidak menyamakan kategori peke
 6. Buka `Delta_Team_Final_Project_Bank_Marketing_Analysis.ipynb`.
 7. Jalankan seluruh cell secara berurutan.
 
-> Daftar dependensi dan versi paket perlu disesuaikan dengan isi notebook. Menambahkan `requirements.txt` akan membantu reproduksibilitas proyek.
-
-## ⚠️ Keterbatasan Analisis
-
-- **Korelasi bukan kausalitas:** Hubungan demografi, frekuensi kontak, dan indikator ekonomi dengan konversi tidak membuktikan sebab-akibat.
-- **Bias seleksi kontak:** Nasabah yang sulit dikonversi mungkin menerima lebih banyak panggilan. Karena itu, konversi rendah pada kelompok dengan banyak kontak tidak otomatis membuktikan bahwa panggilan tambahan menyebabkan penolakan.
-- **Inferensi waktu:** Penentuan tahun dari kronologi dan Euribor perlu divalidasi terhadap metadata asli.
-- **Durasi panggilan:** `duration` baru diketahui setelah panggilan selesai, sehingga tidak boleh digunakan untuk model penargetan sebelum panggilan karena berisiko menyebabkan data leakage.
-- **Penghapusan durasi nol:** Menghapus observasi ini dapat mengubah ukuran efektivitas operasional. Untuk evaluasi seluruh upaya kontak, observasi tersebut juga perlu dipertimbangkan.
-- **Ukuran segmen:** Conversion rate tinggi pada segmen kecil perlu dilengkapi jumlah observasi dan interval ketidakpastian.
-- **Validasi proyeksi:** Simulasi belum memperhitungkan biaya, keterjangkauan nasabah, perubahan kondisi pasar, dan respons aktual.
-- **Relevansi historis:** Pola data tahun 2008–2010 belum tentu berlaku pada kampanye saat ini.
-- **Privasi dan kepatuhan:** Implementasi strategi harus mempertimbangkan perlindungan data, persetujuan komunikasi, dan perlakuan yang adil terhadap nasabah.
 
 ## ✅ Kesimpulan
 
 Analisis menunjukkan bahwa **riwayat keberhasilan kampanye, segmentasi nasabah, saluran komunikasi, dan pengelolaan frekuensi kontak** merupakan faktor penting dalam perencanaan telemarketing.
 
-Strategi berbasis data berpotensi meningkatkan efisiensi dibandingkan pendekatan tanpa segmentasi. Namun, rekomendasi dan estimasi peningkatan konversi perlu diuji melalui **pilot campaign atau A/B testing** sebelum diterapkan dalam skala besar.
 
 ---
 

@@ -236,7 +236,7 @@ Simulasi dilakukan terhadap observasi yang belum berhasil dikonversi pada period
 7. Jalankan seluruh cell secara berurutan.
 
 
-## ✅ Kesimpulan
+## Kesimpulan
 
 Terlihat dari hasil analisa bahwa ada beberapa faktor yang bisa mempengaruhi conversion rate yang harus dipertimbangkan sebagai prioritas sebelum melancarkan kampanye telemarketing agar tidak membuang resource secara sia-sia. 
 Diperlukan strategi yang berkesinambungan untuk melakukan kampanye telemarketing berikutnya, jangan menggunakan strategi yang benar-benar terpisah tanpa mempedulikan hasil yang lalu maupun tanpa memperhitungkan 

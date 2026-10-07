@@ -179,25 +179,20 @@ Segmen dengan tingkat konversi tinggi belum tentu menghasilkan jumlah konversi t
 
 - Pertimbangkan cellular sebagai saluran utama.
 - Bandingkan conversion rate, biaya per kontak, dan biaya per konversi antarsaluran.
-- Hormati persetujuan komunikasi dan preferensi nasabah.
 
 ### 3. Kendalikan Frekuensi Kontak
 
-- Uji batas operasional awal sebanyak **maksimal tiga kontak per nasabah**.
-- Hentikan kontak jika nasabah menolak atau meminta tidak dihubungi.
+- Membatasi kontak nasabah **maksimal tiga kontak per nasabah**.
 - Evaluasi batas kontak melalui eksperimen sebelum diterapkan secara luas.
 
 ### 4. Pertimbangkan Kondisi Ekonomi
 
-- Pantau Euribor dan indikator ekonomi lainnya.
-- Gunakan kondisi makroekonomi sebagai salah satu masukan untuk perencanaan kampanye.
-- Validasi pola historis pada data yang lebih baru.
+- Gunakan Euribor 3m sebagai faktor utama, dibandingkan faktor lainnya
 
 ### 5. Kelola Database Kampanye
 
 - Simpan riwayat kontak, respons, dan hasil penawaran secara terstruktur.
 - Evaluasi ulang nasabah yang belum berkonversi berdasarkan relevansi produk dan respons sebelumnya.
-- Jangan otomatis memprioritaskan seluruh nasabah yang pernah menolak hanya karena telah dihubungi.
 
 ## Simulasi Potensi Konversi
 

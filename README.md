@@ -216,9 +216,12 @@ Simulasi dilakukan terhadap observasi yang belum berhasil dikonversi pada period
 ### Prasyarat
 
 - Python 3.
-- Jupyter Notebook atau JupyterLab.
+- Jupyter Notebook atau Google Colab
 - Dataset yang digunakan oleh notebook.
 - Library Python sesuai perintah `import` dalam notebook.
+
+- sumber dataset:
+- https://www.kaggle.com/datasets/volodymyrgavrysh/bank-marketing-campaigns-dataset
 
 ### Langkah Penggunaan
 
@@ -226,12 +229,7 @@ Simulasi dilakukan terhadap observasi yang belum berhasil dikonversi pada period
 2. Pastikan dataset tersedia pada path yang digunakan notebook.
 3. Buat virtual environment jika diperlukan.
 4. Instal Jupyter dan dependensi yang diimpor notebook.
-5. Jalankan Jupyter Notebook:
-
-   ```bash
-   jupyter notebook
-   ```
-
+5. Jalankan Google Colab
 6. Buka `Delta_Team_Final_Project_Bank_Marketing_Analysis.ipynb`.
 7. Jalankan seluruh cell secara berurutan.
 

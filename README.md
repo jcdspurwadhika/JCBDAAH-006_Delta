@@ -1,4 +1,4 @@
-# 📊 Bank Marketing Analysis
+# Bank Marketing Analysis
 ## Analisis Hasil dan Strategi Kampanye Telemarketing Bank di Portugal
 
 Proyek analisis data untuk mengevaluasi efektivitas kampanye telemarketing produk **deposito berjangka** pada sebuah institusi perbankan di Portugal.
@@ -8,7 +8,7 @@ Analisis mencakup pembersihan data, eksplorasi karakteristik nasabah, evaluasi r
 
 ---
 
-## 📑 Daftar Isi
+## Daftar Isi
 
 - [Tim Proyek](#-tim-proyek)
 - [Latar Belakang](#-latar-belakang)
@@ -23,7 +23,7 @@ Analisis mencakup pembersihan data, eksplorasi karakteristik nasabah, evaluasi r
 - [Keterbatasan Analisis](#-keterbatasan-analisis)
 - [Kesimpulan](#-kesimpulan)
 
-## 👥 Tim Proyek
+## Tim Proyek
 
 **Delta Team — JCBDAAH-006**
 
@@ -31,7 +31,7 @@ Analisis mencakup pembersihan data, eksplorasi karakteristik nasabah, evaluasi r
 - Michael Heydermans
 - Razhar N.J.
 
-## 🏦 Latar Belakang
+## Latar Belakang
 
 Krisis finansial global tahun 2008 memberikan tekanan terhadap likuiditas sektor perbankan Portugal. Salah satu pendekatan untuk memperkuat pendanaan adalah menghimpun dana masyarakat melalui produk deposito berjangka.
 
@@ -42,14 +42,14 @@ Kampanye telemarketing menjadi sarana untuk menawarkan produk tersebut. Namun, t
 - Hubungan kondisi ekonomi dengan keberhasilan kampanye.
 - Peluang penawaran ulang kepada nasabah dari kampanye sebelumnya.
 
-## 🎯 Tujuan Analisis
+## Tujuan Analisis
 
 1. Mengidentifikasi karakteristik nasabah dengan tingkat konversi tinggi.
 2. Menganalisis hubungan riwayat kampanye dan indikator ekonomi dengan keputusan nasabah.
 3. Menyusun rekomendasi segmentasi, saluran komunikasi, dan frekuensi kontak.
 4. Mengestimasi potensi konversi melalui simulasi penawaran ulang.
 
-## 🗂️ Dataset
+## Dataset
 
 Dataset awal terdiri dari **41.188 baris dan 21 kolom**, termasuk variabel target.
 
@@ -84,7 +84,7 @@ Dataset awal terdiri dari **41.188 baris dan 21 kolom**, termasuk variabel targe
 | Indikator ekonomi | `nr.employed` | Indikator jumlah tenaga kerja |
 | Target | `y` | Keputusan berlangganan deposito berjangka |
 
-## 📁 Struktur Repository
+## Struktur Repository
 
 File utama proyek:
 
@@ -95,7 +95,7 @@ File utama proyek:
 ```
 
 
-## 🔍 Metodologi
+## Metodologi
 Digunakan analisis deskriptif
 
 ### 1. Data Cleaning
@@ -128,7 +128,7 @@ Analisis dilakukan terhadap:
 
 **Conversion rate** dihitung sebagai jumlah observasi dengan `y = yes` dibagi total observasi pada kelompok yang dianalisis, kemudian dikalikan 100%.
 
-## 💡 Temuan Utama
+## Temuan Utama
 
 Angka berikut merujuk pada hasil analisis yang dilaporkan dalam proyek.
 
@@ -167,7 +167,7 @@ Segmen dengan tingkat konversi tinggi belum tentu menghasilkan jumlah konversi t
 - Pada periode Euribor sekitar **5%**, tingkat konversi berada pada kisaran **3%–6%**.
 
 
-## 🚀 Rekomendasi Strategi
+## Rekomendasi Strategi
 
 ### 1. Prioritaskan Nasabah Berdasarkan Riwayat
 
@@ -199,7 +199,7 @@ Segmen dengan tingkat konversi tinggi belum tentu menghasilkan jumlah konversi t
 - Evaluasi ulang nasabah yang belum berkonversi berdasarkan relevansi produk dan respons sebelumnya.
 - Jangan otomatis memprioritaskan seluruh nasabah yang pernah menolak hanya karena telah dihubungi.
 
-## 📈 Simulasi Potensi Konversi
+## Simulasi Potensi Konversi
 
 Simulasi dilakukan terhadap observasi yang belum berhasil dikonversi pada periode **Mei 2008–Mei 2009**, berdasarkan pembagian periode dalam analisis.
 
@@ -211,7 +211,7 @@ Simulasi dilakukan terhadap observasi yang belum berhasil dikonversi pada period
 | Estimasi konversi tambahan | 6.049–7.917 |
 
 
-## 🛠️ Cara Menjalankan
+## Cara Menjalankan
 
 ### Prasyarat
 

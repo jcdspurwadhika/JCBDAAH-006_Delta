@@ -238,8 +238,9 @@ Simulasi dilakukan terhadap observasi yang belum berhasil dikonversi pada period
 
 ## ✅ Kesimpulan
 
-Analisis menunjukkan bahwa **riwayat keberhasilan kampanye, segmentasi nasabah, saluran komunikasi, dan pengelolaan frekuensi kontak** merupakan faktor penting dalam perencanaan telemarketing.
-
+Terlihat dari hasil analisa bahwa ada beberapa faktor yang bisa mempengaruhi conversion rate yang harus dipertimbangkan sebagai prioritas sebelum melancarkan kampanye telemarketing agar tidak membuang resource secara sia-sia. 
+Diperlukan strategi yang berkesinambungan untuk melakukan kampanye telemarketing berikutnya, jangan menggunakan strategi yang benar-benar terpisah tanpa mempedulikan hasil yang lalu maupun tanpa memperhitungkan 
+untuk ke masa depannya lagi.
 
 ---
 

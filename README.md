@@ -220,8 +220,8 @@ Simulasi dilakukan terhadap observasi yang belum berhasil dikonversi pada period
 - Dataset yang digunakan oleh notebook.
 - Library Python sesuai perintah `import` dalam notebook.
 
-- sumber dataset:
-- https://www.kaggle.com/datasets/volodymyrgavrysh/bank-marketing-campaigns-dataset
+sumber dataset:
+https://www.kaggle.com/datasets/volodymyrgavrysh/bank-marketing-campaigns-dataset
 
 ### Langkah Penggunaan
 

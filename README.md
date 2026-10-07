@@ -226,12 +226,11 @@ https://www.kaggle.com/datasets/volodymyrgavrysh/bank-marketing-campaigns-datase
 ### Langkah Penggunaan
 
 1. Clone atau unduh repository ini.
-2. Pastikan dataset tersedia pada path yang digunakan notebook.
-3. Buat virtual environment jika diperlukan.
-4. Instal Jupyter dan dependensi yang diimpor notebook.
-5. Jalankan Google Colab
-6. Buka `Delta_Team_Final_Project_Bank_Marketing_Analysis.ipynb`.
-7. Jalankan seluruh cell secara berurutan.
+2. Pastikan dataset tersedia sebelumnya.
+3. Jalankan Google Colab.
+4. Buka `Delta_Team_Final_Project_Bank_Marketing_Analysis.ipynb`.
+5. Upload dataset/file CSV
+6. Jalankan seluruh cell secara berurutan.
 
 
 ## Kesimpulan
